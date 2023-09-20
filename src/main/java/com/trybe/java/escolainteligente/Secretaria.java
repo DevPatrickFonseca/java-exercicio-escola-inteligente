@@ -7,15 +7,37 @@ public class Secretaria {
   /**
    * Método calcularMedia.
    */
-  public static double calcularMedia(double nota1, double nota2, double nota3, double nota4) {
-    System.out.println("TODO: Implementar a função calcular média.");
-    return 0;
+  public static float calcularMedia(double nota1, double nota2, double nota3, double nota4) {
+    float somaNotas = (float) (nota1 + nota2 + nota3 + nota4);
+    float media = somaNotas / 4;
+
+    return media;
   }
 
   /**
    * Método coletarInformacoes.
    */
   public static void coletarInformacoes() {
-    System.out.println("TODO: Solicitar informações para cálculo da média ");
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Qual o nome do estudante?");
+    String nome = scanner.nextLine();
+
+    System.out.println("Digite as notas do estudante:");
+    System.out.print("Avaliação 1: ");
+    float nota1 = scanner.nextFloat();
+    System.out.print("Avaliação 2: ");
+    float nota2 = scanner.nextFloat();
+    System.out.print("Avaliação 3: ");
+    float nota3 = scanner.nextFloat();
+    System.out.print("Avaliação 4: ");
+    float nota4 = scanner.nextFloat();
+
+    float media = calcularMedia(nota1, nota2, nota3, nota4);
+
+    System.out.println("A média das notas de " + nome + " é " + media + ".");
+
+    scanner.close();
   }
+
 }
