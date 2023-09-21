@@ -4,12 +4,16 @@ import java.util.Scanner;
 
 public class Secretaria {
 
+  private Secretaria() {
+  }
+
   /**
    * Método calcularMedia.
    */
-  public static float calcularMedia(double nota1, double nota2, double nota3, double nota4) {
-    float somaNotas = (float) (nota1 + nota2 + nota3 + nota4);
-    float media = somaNotas / 4;
+  public static double calcularMedia(double nota1, double nota2, double nota3, double nota4) {
+    double somaNotas = (nota1 + nota2 + nota3 + nota4);
+    double media;
+    media = somaNotas / 4;
 
     return media;
   }
@@ -33,9 +37,9 @@ public class Secretaria {
     System.out.print("Avaliação 4: ");
     float nota4 = scanner.nextFloat();
 
-    float media = calcularMedia(nota1, nota2, nota3, nota4);
+    double media = calcularMedia(nota1, nota2, nota3, nota4);
 
-    System.out.println("A média das notas de " + nome + " é " + media + ".");
+    System.out.println("A média das notas de " + nome + " é " + media);
 
     scanner.close();
   }
