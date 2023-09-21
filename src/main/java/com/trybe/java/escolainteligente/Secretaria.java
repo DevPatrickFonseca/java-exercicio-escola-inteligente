@@ -39,7 +39,9 @@ public class Secretaria {
 
     double media = calcularMedia(nota1, nota2, nota3, nota4);
 
+    System.out.println("████████████████████████████████████");
     System.out.println("A média das notas de " + nome + " é " + media);
+    System.out.println("████████████████████████████████████");
 
     scanner.close();
   }
