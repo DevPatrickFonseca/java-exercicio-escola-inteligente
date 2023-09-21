@@ -76,7 +76,7 @@ public class PessoaEstudante {
   public static void coletarInformacoes() {
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Digite o nome do estudante:");
+    System.out.println("Digite o nome da Pessoa Estudante?");
     String nome = scanner.nextLine();
 
     System.out.println("Qual a sua idade em anos, meses e dias?");
@@ -89,7 +89,7 @@ public class PessoaEstudante {
 
     int idadeEmDias = calcularIdadeEmDias(anos, meses, dias);
     System.out.println("███████████████████████████████████");
-    System.out.println("A idade de " + nome + " em dias é: " + idadeEmDias);
+    System.out.println("A idade de " + nome + " em dias é " + idadeEmDias + ".");
     System.out.println("███████████████████████████████████");
 
     scanner.close();
