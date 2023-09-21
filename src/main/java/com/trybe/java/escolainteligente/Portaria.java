@@ -1,11 +1,15 @@
 package com.trybe.java.escolainteligente;
 
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Portaria {
 
+  private Portaria() {
+  }
 
   /**
    * Método emitirRelatorio.
@@ -13,7 +17,9 @@ public class Portaria {
   public static void emitirRelatorio(int qtdFundamental1, int qtdFundamental2, int qtdMedio) {
     int totalPessoas = qtdFundamental1 + qtdFundamental2 + qtdMedio;
 
-    DecimalFormat df = new DecimalFormat("#0.0");
+    DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
+    DecimalFormat df = new DecimalFormat("#.0#", symbols);
+
     double percentualFundamental1 = (qtdFundamental1 * 100.0) / totalPessoas;
     double percentualFundamental2 = (qtdFundamental2 * 100.0) / totalPessoas;
     double percentualMedio = (qtdMedio * 100.0) / totalPessoas;
@@ -92,9 +98,9 @@ public class Portaria {
    * Método verificarCategoria.
    */
   public static String verificarCategoria(int idade) {
-    if (idade < 10) {
+    if (idade <= 10) {
       return "Ensino Fundamental I";
-    } else if (idade >= 10 && idade <= 14) {
+    } else if (idade >= 15) {
       return "Ensino Fundamental II";
     } else {
       return "Ensino Médio";
