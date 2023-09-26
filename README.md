@@ -48,17 +48,17 @@ Este exercício Escola Inteligente é uma aplicação Java que interage através
 ## ✅ O que foi desenvolvido
 
 1. **Calcular a idade em dias para o departamento Pessoa Estudante:**
-    - Implemente os métodos `coletarInformacoes` e `calcularIdadeEmDias` na classe `PessoaEstudante`.
+    - Implementei os métodos `coletarInformacoes` e `calcularIdadeEmDias` na classe `PessoaEstudante`.
     - O método `coletarInformacoes` lê o nome da pessoa estudante, anos, meses e dias.
     - O método `calcularIdadeEmDias` calcula e retorna a idade da pessoa estudante em dias.
 
 2. **Calcular a média das notas de uma pessoa estudante:**
-    - Implemente os métodos `coletarInformacoes` e `calcularMedia` na classe `Secretaria`.
+    - Implementei os métodos `coletarInformacoes` e `calcularMedia` na classe `Secretaria`.
     - O método `coletarInformacoes` lê o nome da pessoa estudante e quatro notas.
     - O método `calcularMedia` calcula e retorna a média das notas.
 
 3. **Realizar o controle de acesso e emitir o relatório:**
-    - Implemente os métodos `coletarInformacoes` e `emitirRelatorio` na classe `Portaria`.
+    - Implementei os métodos `coletarInformacoes` e `emitirRelatorio` na classe `Portaria`.
     - O método `coletarInformacoes` registra a idade das pessoas estudantes que acessam a escola e armazena essas idades em um ArrayList dinâmico.
     - O método `emitirRelatorio` gera um relatório que inclui o número total de pessoas estudantes, o número em categorias específicas e a porcentagem em cada categoria.
 
